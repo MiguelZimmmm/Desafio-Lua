@@ -1,6 +1,11 @@
 -- UTF-8
 os.execute("chcp 65001")
 
+--Detalhes
+local separationOne = "==========================================="
+local separationTwo = "------------------------------"
+
+
 -- Criatura
 local monsterName = "Creeper"
 local description = "Criatura verde, rosto assustador, corpo infla e explode, deixando rastro de destruição."
@@ -39,21 +44,21 @@ end
 
 
 -- Cartão
-print("===========================================")
+print(separationOne)
 print("| Nome: " .. monsterName)
 print("| Descrição: " .. description)
-print("| ------------------------------")
+print("|" .. separationTwo)
 print("| História: " .. history)
-print("| ------------------------------")
+print("|" .. separationTwo)
 print("| Item: " .. item)
 print("| Som: " .. sound)
 print("| Emoji Favorito: " .. emoji)
 print("| Horário Favorito: " .. favoriteTime)
-print("| ------------------------------")
+print("|" .. separationTwo)
 print("| Atributos")
 print("|    Ataque:       " .. getProgressBar(attackAttribute))
 print("|    Defesa:       " .. getProgressBar(defenseAttribute))
 print("|    Vida:         " ..   getProgressBar(lifeAttribute))
 print("|    Velocidade:   " .. getProgressBar(speedAttribute))
 print("|    Inteligência: " .. getProgressBar(inteligenceAttribute))
-print("===========================================")
+print(separationOne)
